@@ -16,7 +16,8 @@ db.on("error", (error: string) => {
   console.log("Não foi possível conectar ao banco", error)
 })
 
-require("./routes/client.routes")(app)
+require("./models/client")
+require("./routes")(app)
 
 app.listen(3333, () => {
   console.log("SERVIDOR ONLINE NA PORTA 3333")
