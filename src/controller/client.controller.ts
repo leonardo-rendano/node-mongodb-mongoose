@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Client = mongoose.model("Client")
-import { request, Request, Response } from "express";
+import { Request, Response } from "express";
 
 exports.getClients = async (request: Request, response: Response) => {
   try {
